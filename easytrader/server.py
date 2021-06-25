@@ -4,6 +4,7 @@ from flask import Flask, jsonify, request
 
 from . import api
 from .log import logger
+import time
 
 app = Flask(__name__)
 
@@ -31,8 +32,10 @@ def post_prepare():
 
     user = api.use(json_data.pop("broker"))
     user.prepare(**json_data)
+    user.enable_type_keys_for_editor()
 
     global_store["user"] = user
+    print('local time : ' + str(time.time()))
     return jsonify({"msg": "login success"}), 201
 
 

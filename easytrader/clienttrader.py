@@ -431,6 +431,7 @@ class ClientTrader(IClientTrader):
         self._main.child_window(
             control_id=self._config.TRADE_SUBMIT_CONTROL_ID, class_name="Button"
         ).click()
+        print('local time : ' + str(time.time()))
 
     @perf_clock
     def __get_top_window_pop_dialog(self):
@@ -456,9 +457,9 @@ class ClientTrader(IClientTrader):
 
         # 设置交易所
         if security.lower().startswith("sz"):
-            self._set_stock_exchange_type("深圳Ａ股")
+            self._set_stock_exchange_type("深圳A股")
         if security.lower().startswith("sh"):
-            self._set_stock_exchange_type("上海Ａ股")
+            self._set_stock_exchange_type("上海A股")
 
         self.wait(0.1)
 
