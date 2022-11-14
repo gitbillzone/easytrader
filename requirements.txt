@@ -12,9 +12,9 @@ flask==1.0.2
 idna==2.7
 itsdangerous==0.24
 jinja2==2.10
-lxml==4.2.3
+lxml==4.9.1
 markupsafe==1.0
-numpy==1.15.0; python_version >= '2.7'
+numpy==1.22.2; python_version >= '2.7'
 pandas==0.23.3
 pillow==5.2.0
 pyperclip==1.6.4
@@ -24,8 +24,8 @@ python-dateutil==2.7.3
 python-xlib==0.23
 pytz==2018.5
 pywinauto==0.6.6
-requests==2.19.1
+requests==2.20
 six==1.11.0
-urllib3==1.23; python_version != '3.1.*'
+urllib3==1.26.5; python_version != '3.1.*'
 werkzeug==0.14.1
 
