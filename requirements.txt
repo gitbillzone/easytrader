@@ -9,7 +9,7 @@ cssselect==1.0.3; python_version != '3.3.*'
 dill==0.2.8.2
 easyutils==0.1.7
 flask==1.0.2
-idna==2.7
+idna==3.7
 itsdangerous==0.24
 jinja2==2.10
 lxml==4.2.3
